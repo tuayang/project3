@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import M from 'materialize-css'
 
+
 export default class Nav extends Component {
     componentDidMount() {
         let elems = document.querySelectorAll('.dropdown-trigger');
@@ -19,8 +20,8 @@ export default class Nav extends Component {
                             
                             <li className="hide-on-med-and-down"><Link to="/addproject">Create New</Link></li>
                             <li className="hide-on-med-and-down"><Link to="/review">Review</Link></li>
-                            <li className="hide-on-med-and-down"><Link to="/">Sign Up</Link></li>
-                            <li className="hide-on-med-and-down"><Link to="/">Login</Link></li>
+                            <li className="hide-on-med-and-down"><Link to="/signup">Sign Up</Link></li>
+                            <li className="hide-on-med-and-down"><Link to="/login">Login</Link></li>
 
                             <a className='dropdown-trigger hide-on-large-only' href='#' data-target='dropdown1'><i className='material-icons'>dehaze</i></a>
                         </ul>
@@ -29,6 +30,7 @@ export default class Nav extends Component {
                             <li className=""><Link to="/">Home</Link></li>
                             <li className=""><Link to="/addproject">Create</Link></li>
                             <li className=""><Link to="/review">Review</Link></li>
+                            <li className=""><Link to="/signup">Sign Up</Link></li>
                         </ul>
 
                     </div>

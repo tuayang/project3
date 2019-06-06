@@ -69,9 +69,11 @@ nav{
 
 #header-text2{
   margin-top: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 3em;
-  color: #ba68c8;
-  animation-name: drop;
+  text-shadow: 2px 2px 4px #000000;
+  color: #ab9ff1;
+  animation-name: fade;
             animation-duration: .25s;
             animation-iteration-count: 6;
 }
@@ -193,7 +195,7 @@ margin-left: 50px;
   display: inline-block;
    
   border-radius: 50px 5px 50px 50px;
-  background-color: green;
+  background-color:#07964e;
   
 
 

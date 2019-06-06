@@ -60,7 +60,7 @@ export default class AddFlashCard extends Component {
         //add form validation
         if (this.state.textAreaFront.length < 1) {
             isError = true
-            errors.frontError = 'Must have input'
+            errors.frontError = 'Need input'
             //this.state.addError = true;
             this.setState({
                 ...this.state,
@@ -72,7 +72,7 @@ export default class AddFlashCard extends Component {
 
         if (this.state.textAreaBack.length < 1) {
             isError = true
-            errors.backError = 'Must have input'
+            errors.backError = 'Need input'
             //this.state.addError = true;
             this.setState({
                 ...this.state,
@@ -134,6 +134,7 @@ export default class AddFlashCard extends Component {
                 </div>
 
             </Modal>
+            
         )
     }
 }

@@ -3,10 +3,12 @@ var Schema = mongoose.Schema;
 
 var cardSchema = new Schema({
     projectName: String,
-    cards: [{ front: String, back: String }]
+    cards: [{ 
+        front: String, 
+        back: String }]
 });
 
 //create model
-var Project = mongoose.model('Project', cardSchema);
+const Project = mongoose.model('Project', cardSchema);
 
 module.exports = Project

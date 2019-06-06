@@ -4,7 +4,11 @@ import ProjectForm from './components/ProjectForm'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Projects from './components/Projects'
+import Signup from './components/Signup'
+import Login from './components/Login'
+import {UserProvider} from './utils/UserContext';
 import './App.css'
+
 
 class App extends Component {
   render() {
@@ -18,6 +22,8 @@ class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path="/addProject" component={ProjectForm} />
         <Route path="/review" component={Projects} />
+        <Route path="/signup" component={Signup} />
+        <Route path="/login" component={Login} />
       </div>
 
     );
