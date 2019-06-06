@@ -1,12 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var projectSchema = new Schema({
+var cardSchema = new Schema({
     projectName: String,
     cards: [{ front: String, back: String }]
 });
 
 //create model
-var Project = mongoose.model('Project', projectSchema);
+var Project = mongoose.model('Project', cardSchema);
 
 module.exports = Project

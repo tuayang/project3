@@ -111,23 +111,25 @@ export default class ProjectForm extends Component {
 
         const { redirect } = this.state;
         if (redirect) {
-            return <Redirect to='/projects' />
+            return <Redirect to='/review' />
         }
 
 
         return (
+            <div className="form-header">
             <div className='container'>
-                <h1>Add a Topic</h1>
+                <h1>Topic</h1>
                 <form onSubmit={this.handleSubmit}>
                     {nameErrorOptions}
                     {cardErrorOptions}
                     <label>
-                        Title:
+                        Enter a Topic:
                     <input onChange={this.handleChange} type="text" name="projectName" />
                     </label>
                     <AddFlashCard handler={this.addCardHandler} />
                     <input id="project-submit" className="btn" type="submit" value="Submit" />
                 </form>
+            </div>
             </div>
         )
     }

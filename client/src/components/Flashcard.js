@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 
+
 export default class Flashcard extends Component {
     constructor(props) {
         super(props);
@@ -68,8 +69,8 @@ export default class Flashcard extends Component {
         })
     }
 
-    newGame = () => {
-        console.log('new game clicked')
+    startOver = () => {
+        console.log('Start Over Again')
         this.setState({
             counter: 0,
             showAnswer: false
@@ -77,12 +78,12 @@ export default class Flashcard extends Component {
     }
 
     render() {
-        const flashcard = this.state.currentDoc;
-        let cards = this.state.cards
+        // const flashcard = this.state.currentDoc;
+        // let cards = this.state.cards
         let counter = this.state.counter
         let nextButton;
-        let newGameButton;
-        let newGameDiv;
+        let startOverButton;
+        let startOverDiv;
         let cardDivFront;
         let cardDivBackButton;
         if (counter < this.state.cards.length) {
@@ -99,23 +100,25 @@ export default class Flashcard extends Component {
         }
 
         if (counter === this.state.cards.length) {
-            newGameDiv = <h2>No more Cards!</h2>
-            newGameButton = <button onClick={this.newGame} className="waves-effect waves-light btn">Start Over</button>
+            startOverDiv = <h2 id="cards-flash">No more Cards!</h2>
+            startOverButton = <button onClick={this.startOver} className="waves-effect waves-light btn">Start Over</button>
         }
 
 
         return (
-            <div>
 
-                <h4>Card {this.state.counter + 1}</h4>
+            
+            <div >
+
+                <h6>Card {this.state.counter + 1}</h6>
                 <div className="flashcardDisplay row">
-                    <div className="flashcardFront col s12 m6">
-                        {newGameDiv}
-                        {newGameButton}
-                        <h2>{cardDivFront}</h2>
+                    <div className="flashcardFront col s12 m6 purple">
+                        {startOverDiv}
+                        {startOverButton}
+                        <h2 id="cards-flash">{cardDivFront}</h2>
                     </div>
-                    <div className="flashcardBack col s12 m6">
-                        <h2 id="cardAnswer">{cardDivBackButton}</h2>
+                    <div className="flashcardBack col s12 m6 dark grey">
+                        <h2 id="cards-flash">{cardDivBackButton}</h2>
                     </div>
                     {nextButton}
                 </div>

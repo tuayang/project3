@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  
 }
 .App {
   text-align: center;
@@ -22,8 +23,6 @@
   background-color: #282c34;
   background-image: url('https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
   height: 100%; 
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,6 +101,7 @@ margin-left: 50px;
 
 /*-------ADD PROJECT and FLASHCARD COMPONENT----------*/
 #project-submit{
+
   margin-top: 20px;
 }
 
@@ -125,10 +125,6 @@ margin-left: 50px;
 
 }
 
-.project-delete{
-  border-radius: 4px;
-  display: block;
-}
 
 .projectListTitle{
   padding-top: 55px;
@@ -176,3 +172,74 @@ margin-left: 50px;
     transform: rotate(360deg);
   }
 }
+
+.flashcardFront {
+  height: 300px;
+  width: 150px;
+  margin-bottom: 15px;
+  padding-top: 50px;
+  
+}
+
+.flashcardBack {
+  height: 300px;
+  width: 150px;
+  margin-bottom: 15px;
+  padding-top: 50px;
+}
+
+
+.projectDiv {
+  display: inline-block;
+   
+  border-radius: 50px 5px 50px 50px;
+  background-color: green;
+  
+
+
+}
+
+.project-delete {
+  border-radius: 0px 0px 0px 10px;
+  height: -50%;
+  width: -50%;
+}
+
+.topic-header {
+  background-image: url('http://calnev-email.brtapp.com/files/graphics/89518.jpg');
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100%; 
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+
+}
+
+.form-header {
+  background-image: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100%; 
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+#cards-flash {
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+/* CSS FOR FLIP-CARD  */
+

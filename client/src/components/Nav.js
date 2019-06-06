@@ -11,14 +11,14 @@ export default class Nav extends Component {
     render() {
         return (
             <div>
-                <nav className='purple'>
+                <nav className='light green'>
                     <div className="nav-wrapper">
-                        <a className="logo">FlashC</a>
+                        <a className="logo"><Link to="/">FlashC</Link></a>
                         <ul id="nav-mobile" className="right ">
 
-                            <li className="hide-on-med-and-down"><Link to="/">Home</Link></li>
+                            
                             <li className="hide-on-med-and-down"><Link to="/addproject">Create New</Link></li>
-                            <li className="hide-on-med-and-down"><Link to="/projects">Review</Link></li>
+                            <li className="hide-on-med-and-down"><Link to="/review">Review</Link></li>
                             <li className="hide-on-med-and-down"><Link to="/">Sign Up</Link></li>
                             <li className="hide-on-med-and-down"><Link to="/">Login</Link></li>
 
@@ -28,7 +28,7 @@ export default class Nav extends Component {
                         <ul id='dropdown1' className='dropdown-content'>
                             <li className=""><Link to="/">Home</Link></li>
                             <li className=""><Link to="/addproject">Create</Link></li>
-                            <li className=""><Link to="/projects">Review</Link></li>
+                            <li className=""><Link to="/review">Review</Link></li>
                         </ul>
 
                     </div>
