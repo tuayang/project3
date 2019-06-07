@@ -46,7 +46,7 @@ router.post('/newDocument', (req, res) => {
     })
 
 
-    res.send('somethinggs supposed to happen')
+    res.send('waiting...')
     //res.redirect('/projects')
 
 })

@@ -6,7 +6,6 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import Signup from './components/Signup'
 import Login from './components/Login'
-import {UserProvider} from './utils/UserContext';
 import './App.css'
 
 

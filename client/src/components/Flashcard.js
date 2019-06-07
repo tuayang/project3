@@ -89,7 +89,7 @@ export default class Flashcard extends Component {
         let cardDivBackButton;
         if (counter < this.state.cards.length) {
             cardDivFront = <div>{this.state.cards[counter].front}</div>
-            cardDivBack = <div>{this.state.cards[counter].back}</div>
+            // cardDivBack = <div>{this.state.cards[counter].back}</div>
             cardDivBackButton = <button onClick={this.answerClick} className="waves-effect waves-light btn">Show Answer</button>
             nextButton = <button onClick={this.nextClick} className="waves-effect waves-light btn red">Skip</button>
             
@@ -114,13 +114,13 @@ export default class Flashcard extends Component {
 
                 <h6>Card {this.state.counter + 1}</h6>
                 <div className="flashcardDisplay row">
-                    <div className="flashcardFront col s12 m6 purple">
+                    <div className="flashcardFront col s12 m6 black">
                         {startOverDiv}
                         {startOverButton}
                         <h2 id="cards-flash">{cardDivFront}</h2>
                     </div>
-                    <div className="flashcardBack col s12 m6 dark grey">
-                        <h2 id="cards-flash">{cardDivBack}</h2>
+                    <div className="flashcardBack col s12 m6 white">
+                        <h2 id="cards-flash">{cardDivBackButton}</h2>
                     </div>
                     {nextButton}
                 </div>
