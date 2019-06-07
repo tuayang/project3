@@ -13,7 +13,7 @@ export default class Home extends Component {
                 type='button'
                 className='button btn-large orange'
                 waves='light'
-                onClick={() => { history.push('/projects') }}
+                onClick={() => { history.push('/review') }}
             >
                 Review
             </button>
